@@ -2,6 +2,7 @@ import React from 'react'
 import EventCard from './EventCard'
 import EventCarousel from './EventCarousel'
 import About from '../(currencies)/sections/About'
+import AlreadyHoldingCrypto from '../(currencies)/sections/AlreadyHoldingCrypto'
 
 const MainContainer = () => {
 	return (
@@ -9,6 +10,7 @@ const MainContainer = () => {
 			<div className='w-full my-4'>
 				<EventCarousel />
 				<About />
+				<AlreadyHoldingCrypto />
 			</div>
 		</div>
 	)
