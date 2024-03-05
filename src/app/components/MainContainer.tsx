@@ -1,5 +1,4 @@
 import Hero from '../(currencies)/sections/Hero'
-import TradingViewWidget from './TradingViewWidget'
 import Sentiment from '../(currencies)/sections/Sentiment'
 import About from '../(currencies)/sections/About'
 import AlreadyHoldingCrypto from '../(currencies)/sections/AlreadyHoldingCrypto'
@@ -11,7 +10,6 @@ const MainContainer = () => {
 		<div className='col-span-full lg:col-span-9 sm:px-4'>
 			<div className='w-full my-4'>
 				<Hero />
-				<TradingViewWidget />
 				<Sentiment />
 				<About />
 				<AlreadyHoldingCrypto />
