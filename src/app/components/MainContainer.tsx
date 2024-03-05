@@ -4,7 +4,7 @@ import About from '../(currencies)/sections/About'
 import AlreadyHoldingCrypto from '../(currencies)/sections/AlreadyHoldingCrypto'
 import Tokenomics from '../(currencies)/sections/Tokenomics'
 import Team from '../(currencies)/sections/Team'
-import Tabs from '../(currencies)/sections/Tabs'
+import Tabs from '../components/Tabs'
 
 const MainContainer = () => {
 	return (
