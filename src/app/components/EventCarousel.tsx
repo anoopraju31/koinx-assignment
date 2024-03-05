@@ -42,7 +42,7 @@ const EventCarousel = () => {
 		carouselRef.current.scrollLeft += carouselRef.current.offsetWidth
 	}
 	return (
-		<div className='relative group w-full max-w-5xl px-4'>
+		<div className='relative group w-full'>
 			<div
 				ref={carouselRef}
 				className='w-full flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth transition-transform duration-300 ease-in-out'>
@@ -60,8 +60,8 @@ const EventCarousel = () => {
 					disabled={isPreviousButtonDisabled}
 					onClick={scrollToPrevious}
 					aria-label='previous button'
-					className='absolute top-0 left-2 h-full w-16 flex justify-center items-center disabled:hidden disabled:cursor-default'>
-					<div className=' h-10 w-10 bg-white flex justify-center items-center rounded-full text-3xl hover:bg-slate-100'>
+					className='absolute top-0 left-1 h-full w-12 flex justify-center items-center disabled:hidden disabled:cursor-default'>
+					<div className='w-8 md:w-10 h-8 md:h-10 bg-white flex justify-center items-center rounded-full text-xl md:text-3xl hover:bg-slate-100'>
 						<GrFormPrevious />
 					</div>
 					<span className='sr-only'> previous</span>
@@ -72,8 +72,8 @@ const EventCarousel = () => {
 					disabled={isNextButtonDisabled}
 					onClick={scrollToNext}
 					aria-label='next button'
-					className='absolute top-0 right-2 h-full w-16 flex justify-center items-center disabled:hidden disabled:cursor-default'>
-					<div className=' h-10 w-10 bg-white flex justify-center items-center rounded-full text-3xl hover:bg-slate-100'>
+					className='absolute top-0 right-1 h-full w-12 flex justify-center items-center disabled:hidden disabled:cursor-default'>
+					<div className='w-8 md:w-10 h-8 md:h-10 bg-white flex justify-center items-center rounded-full text-xl md:text-3xl hover:bg-slate-100'>
 						<GrFormNext />
 					</div>
 					<span className='sr-only'> next</span>
