@@ -3,6 +3,7 @@ import EventCard from './EventCard'
 import EventCarousel from './EventCarousel'
 import About from '../(currencies)/sections/About'
 import AlreadyHoldingCrypto from '../(currencies)/sections/AlreadyHoldingCrypto'
+import Tokenomics from '../(currencies)/sections/Tokenomics'
 
 const MainContainer = () => {
 	return (
@@ -11,6 +12,7 @@ const MainContainer = () => {
 				<EventCarousel />
 				<About />
 				<AlreadyHoldingCrypto />
+				<Tokenomics />
 			</div>
 		</div>
 	)
