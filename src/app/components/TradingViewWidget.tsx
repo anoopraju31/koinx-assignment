@@ -7,10 +7,7 @@ function TradingViewWidget() {
 	const container = useRef<HTMLDivElement | undefined>()
 
 	useEffect(() => {
-		console.log('inside useEffect')
-
 		if (container.current && !isRendered.current) {
-			console.log('inside container')
 			isRendered.current = true
 			const script = document.createElement('script')
 			script.src =
