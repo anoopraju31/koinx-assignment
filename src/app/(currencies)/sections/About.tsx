@@ -3,7 +3,7 @@ import React from 'react'
 
 const About = () => {
 	return (
-		<section>
+		<section className='p-4'>
 			<SectionHeading heading='About Bitcoin' />
 		</section>
 	)
