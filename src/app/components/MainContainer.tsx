@@ -4,8 +4,8 @@ import EventCarousel from './EventCarousel'
 
 const MainContainer = () => {
 	return (
-		<div className='flex-1 px-4'>
-			<div className='w-full'>
+		<div className='col-span-full lg:col-span-9 px-4'>
+			<div className='w-full my-4'>
 				<EventCarousel />
 			</div>
 		</div>

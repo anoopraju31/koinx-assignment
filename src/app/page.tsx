@@ -7,7 +7,7 @@ const Home = () => {
 	return (
 		<div className='h-[300vh] w-full p-4 lg:px-8'>
 			<Breadcrumb path={['Cryptocurrencies', 'Bitcoin']} />
-			<main className='flex flex-col lg:flex-row'>
+			<main className='grid grid-cols-12'>
 				<MainContainer />
 				<AsideContainer />
 			</main>

@@ -5,7 +5,7 @@ import { FaArrowRight } from 'react-icons/fa6'
 
 const AsideContainer = () => {
 	return (
-		<aside className='flex-shrink-0 max-w-sm'>
+		<aside className='w-full col-span-full lg:col-span-3'>
 			<div className='rounded-2xl bg-[#0052FE] p-6 px-8 text-white flex flex-col justify-center items-center gap-3'>
 				<h4 className='font-bold text-2xl text-center'>
 					Get Started with KoinX for FREE
