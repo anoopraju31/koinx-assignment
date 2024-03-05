@@ -1,3 +1,4 @@
+import SecondarySectionHeading from '@/app/components/SecondarySectionHeading'
 import SectionHeading from '@/app/components/SectionHeading'
 import Tabs from '@/app/components/Tabs'
 import React from 'react'
@@ -10,7 +11,7 @@ const Performance = () => {
 			<section className='md:p-6'>
 				<SectionHeading heading='Performance' />
 
-				<div className='py-5 flex flex-col gap-7'>
+				<div className='py-5 mb-5 flex flex-col gap-7'>
 					<RangeSlider
 						titleLeft="Today's Low"
 						titleRight="Today's High"
@@ -24,6 +25,8 @@ const Performance = () => {
 						valueRight='49,743.83'
 					/>
 				</div>
+
+				<SecondarySectionHeading title='Fundamentals' />
 			</section>
 		</div>
 	)

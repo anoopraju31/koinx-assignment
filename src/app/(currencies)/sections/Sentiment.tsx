@@ -6,7 +6,7 @@ const Sentiment = () => {
 	return (
 		<section className='md:p-6'>
 			<SectionHeading heading='Sentiment' />
-			<SecondarySectionHeading />
+			<SecondarySectionHeading title='Key Events' />
 
 			<div className='my-4'>
 				<EventCarousel />
