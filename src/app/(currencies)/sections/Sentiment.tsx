@@ -4,14 +4,14 @@ import EventCarousel from '@/app/components/EventCarousel'
 
 const Sentiment = () => {
 	return (
-		<div>
+		<section className='md:p-6'>
 			<SectionHeading heading='Sentiment' />
 			<SecondarySectionHeading />
 
 			<div className='my-4'>
 				<EventCarousel />
 			</div>
-		</div>
+		</section>
 	)
 }
 
