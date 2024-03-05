@@ -1,13 +1,12 @@
 import React from 'react'
 import EventCard from './EventCard'
+import EventCarousel from './EventCarousel'
 
 const MainContainer = () => {
 	return (
-		<div className='flex-1 w-full px-4'>
-			<div className='flex gap-3 w-full overflow-hidden'>
-				<EventCard />
-				<EventCard />
-				<EventCard />
+		<div className='flex-1 px-4'>
+			<div className='w-full'>
+				<EventCarousel />
 			</div>
 		</div>
 	)
