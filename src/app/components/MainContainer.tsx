@@ -6,7 +6,7 @@ import AlreadyHoldingCrypto from '../(currencies)/sections/AlreadyHoldingCrypto'
 
 const MainContainer = () => {
 	return (
-		<div className='col-span-full lg:col-span-9 px-4'>
+		<div className='col-span-full lg:col-span-9 sm:px-4'>
 			<div className='w-full my-4'>
 				<EventCarousel />
 				<About />
