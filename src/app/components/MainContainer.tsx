@@ -5,6 +5,7 @@ import About from '../(currencies)/sections/About'
 import AlreadyHoldingCrypto from '../(currencies)/sections/AlreadyHoldingCrypto'
 import Tokenomics from '../(currencies)/sections/Tokenomics'
 import Team from '../(currencies)/sections/Team'
+import TradingViewWidget from './TradingViewWidget'
 
 const MainContainer = () => {
 	return (
@@ -15,6 +16,9 @@ const MainContainer = () => {
 				<AlreadyHoldingCrypto />
 				<Tokenomics />
 				<Team />
+				<TradingViewWidget />
+				<About />
+				<AlreadyHoldingCrypto />
 			</div>
 		</div>
 	)
