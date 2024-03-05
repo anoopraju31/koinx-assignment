@@ -1,7 +1,7 @@
 import React from 'react'
-import Breadcrumb from './components/Breadcrumb'
-import MainContainer from './components/MainContainer'
-import AsideContainer from './components/AsideContainer'
+import Breadcrumb from '../components/Breadcrumb'
+import MainContainer from '../components/MainContainer'
+import AsideContainer from '../components/AsideContainer'
 
 const Home = () => {
 	return (
