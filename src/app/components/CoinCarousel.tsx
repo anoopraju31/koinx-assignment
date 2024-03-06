@@ -1,9 +1,10 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react'
+
+import useCrouselScroll from '../hooks/useCrouselScroll'
+import React from 'react'
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr'
 import CoinCard from './CoinCard'
 import { TrendingCoin } from '@/utills'
-import useCrouselScroll from '../hooks/useCrouselScroll'
 
 interface CoinCarouselProps {
 	coins: TrendingCoin[]
