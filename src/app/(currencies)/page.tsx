@@ -3,6 +3,7 @@ import Breadcrumb from '../components/Breadcrumb'
 import MainContainer from '../components/MainContainer'
 import AsideContainer from '../components/AsideContainer'
 import YouMayLike from './sections/YouMayLike'
+import TrendingCoins from './sections/TrendingCoins'
 
 const Home = () => {
 	return (
@@ -13,6 +14,7 @@ const Home = () => {
 				<AsideContainer />
 			</main>
 			<YouMayLike />
+			<TrendingCoins />
 		</div>
 	)
 }
