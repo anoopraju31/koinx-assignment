@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr'
 import CoinCard from './CoinCard'
-import { TrendingCoin } from '../(currencies)/sections/YouMayLike'
+import { TrendingCoin } from '@/utills'
 
 interface CoinCarouselProps {
 	coins: TrendingCoin[]

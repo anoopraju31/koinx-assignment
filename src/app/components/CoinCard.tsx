@@ -1,6 +1,6 @@
+import { TrendingCoin } from '@/utills'
 import Image from 'next/image'
 import React from 'react'
-import { TrendingCoin } from '../(currencies)/sections/YouMayLike'
 
 const CoinCard: React.FC<TrendingCoin> = ({
 	symbol,
