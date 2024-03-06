@@ -4,7 +4,7 @@ import React from 'react'
 
 const YouMayLike = () => {
 	return (
-		<div>
+		<div className='md:p-6 mb-7'>
 			<SectionHeading heading='You May Also Like' />
 			<CoinCarousel />
 		</div>
