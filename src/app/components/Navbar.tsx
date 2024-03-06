@@ -1,17 +1,23 @@
-import { FC } from 'react'
+'use client'
+
+import { FC, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { MdMenu } from 'react-icons/md'
+import { MdClose, MdMenu } from 'react-icons/md'
+import NavMenu from './NavMenu'
 
 const Navbar = () => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false)
 	return (
 		<nav className='sticky top-0 p-4 lg:px-8 bg-white z-50 flex justify-between items-center border-b border-[#dedfe2] shadow-nav'>
 			<Link href='/'>
 				<Image alt='KoinX' src='/logo.png' width={96} height={72} />
 			</Link>
 
-			<div className='text-2xl lg:hidden'>
-				<MdMenu />
+			<div
+				onClick={() => setIsMenuOpen((prev) => !prev)}
+				className='text-2xl lg:hidden'>
+				{isMenuOpen ? <MdClose /> : <MdMenu />}
 			</div>
 
 			<div className='hidden lg:flex items-center gap-6'>
@@ -26,6 +32,13 @@ const Navbar = () => {
 					className='px-3 py-1.5 rounded-lg bg-blue-gradient font-medium text-white text-base'>
 					Get Started
 				</Link>
+			</div>
+
+			<div
+				className={`fixed top-16 ${
+					isMenuOpen ? 'right-4' : '-right-full'
+				} transition-all duration-300`}>
+				<NavMenu />
 			</div>
 		</nav>
 	)
