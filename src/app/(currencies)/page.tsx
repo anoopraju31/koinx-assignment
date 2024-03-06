@@ -2,6 +2,7 @@ import React from 'react'
 import Breadcrumb from '../components/Breadcrumb'
 import MainContainer from '../components/MainContainer'
 import AsideContainer from '../components/AsideContainer'
+import YouMayLike from './sections/YouMayLike'
 
 const Home = () => {
 	return (
@@ -11,6 +12,7 @@ const Home = () => {
 				<MainContainer />
 				<AsideContainer />
 			</main>
+			<YouMayLike />
 		</div>
 	)
 }
