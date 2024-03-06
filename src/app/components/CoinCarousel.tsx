@@ -2,8 +2,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { GrFormPrevious, GrFormNext } from 'react-icons/gr'
 import CoinCard from './CoinCard'
+import { TrendingCoin } from '../(currencies)/sections/YouMayLike'
 
-const CoinCarousel = () => {
+interface CoinCarouselProps {
+	coins: TrendingCoin[]
+}
+
+const CoinCarousel: React.FC<CoinCarouselProps> = ({ coins }) => {
 	const [isPreviousButtonDisabled, setIsPreviousButtonDisabled] =
 		useState<boolean>(true)
 	const [isNextButtonDisabled, setIsNextButtonDisabled] =
@@ -46,21 +51,9 @@ const CoinCarousel = () => {
 			<div
 				ref={carouselRef}
 				className='w-full flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth transition-transform duration-300 ease-in-out'>
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
-				<CoinCard />
+				{coins.map((coin) => (
+					<CoinCard key={coin.id} {...coin} />
+				))}
 			</div>
 
 			<div className=''>
