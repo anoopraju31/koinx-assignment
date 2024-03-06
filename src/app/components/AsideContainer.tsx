@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FaArrowRight } from 'react-icons/fa6'
+import TrendingCoin24H from './TrendingCoin24H'
 
 const AsideContainer = () => {
 	return (
@@ -28,6 +29,8 @@ const AsideContainer = () => {
 					<FaArrowRight />
 				</button>
 			</div>
+
+			<TrendingCoin24H />
 		</aside>
 	)
 }
