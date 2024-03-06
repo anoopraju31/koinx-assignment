@@ -1,12 +1,13 @@
 'use client'
 // TradingViewWidget.jsx
-import React, { useEffect, useRef, memo } from 'react'
+import React, { useEffect, useRef, memo, LegacyRef } from 'react'
 
 function TradingViewWidget() {
 	const isRendered = useRef<boolean>(false)
-	const container = useRef<HTMLDivElement | undefined>()
+	const container: LegacyRef<HTMLDivElement> | undefined = useRef(null)
 
 	useEffect(() => {
+		if (!container.current) return
 		if (container.current && !isRendered.current) {
 			isRendered.current = true
 			const script = document.createElement('script')
