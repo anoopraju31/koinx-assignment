@@ -13,6 +13,7 @@ const Home = () => {
 				<MainContainer />
 				<AsideContainer />
 			</main>
+
 			<YouMayLike />
 			<TrendingCoins />
 		</div>
